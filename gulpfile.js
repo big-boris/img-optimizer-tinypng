@@ -7,7 +7,7 @@ var nm = './node_modules/';
 
 gulp.task('tinypng', function() {
   return gulp.src('dev/img/**/*')
-    .pipe(tinypng('API_KEY')) //key of webdb81
+    .pipe(tinypng('API_KEY'))
     .pipe(gulp.dest('dist/img'));
 });
 
